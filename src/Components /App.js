@@ -8,9 +8,9 @@ const App = () => {
 
   const trailItems = [...new Set(RealData.map((Val) => Val.country))];
 
-  const filterItem = (curcat) => {
+  const filterItem = (item) => {
     const newItem = RealData.filter((newVal) => {
-      return newVal.country === curcat;
+      return newVal.country === item;
     });
     setItem(newItem);
   };
