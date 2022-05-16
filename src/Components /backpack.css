@@ -1,17 +1,20 @@
+.backpackTitle{
+    height: 50%;
+    width: 33%;
+    min-width: 400px;
+    margin: 5px auto;
+}
+
+.backTitle2{
+    height: 50%;
+    width: 33%;
+    min-width: 400px;
+    margin: 5px auto; 
+}
+
 .backpack-container-wrapper{
     height: 50%;
     width: 33%;
     min-width: 400px;
     margin: 5px auto;
-    border: 1px;
-    border-color: blue;
-}
-
-.backpack-container-box{
-    height: 50%;
-    width: 33%;
-    min-width: 400px;
-    margin: 5px auto;
-    border: 1px;
-    border-color: blue;
 }

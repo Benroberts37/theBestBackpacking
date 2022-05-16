@@ -1,5 +1,7 @@
 import React from 'react'
 import BackpackCard from './backpackCard'
+import './backpack.css'
+
 
 function Home () {
     return(
@@ -10,9 +12,9 @@ function Home () {
             <h2> 
                 Here you will find the best backpacking trips around the world.
             </h2>
-            <h3>
+            <div className = 'backpack-h3-wrapper'>
                 <BackpackCard/>
-            </h3>
+            </div>
         </div>
     )
 }
