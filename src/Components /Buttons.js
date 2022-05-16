@@ -5,14 +5,14 @@ const Buttons = ({ filterItem, setItem, trailItems }) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        {trailItems.map((Val, id) => {
+        {trailItems.map((props, id) => {
           return (
             <button
               className="btn-dark text-white p-1 px-2 mx-5 btn fw-bold"
-              onClick={() => filterItem(Val)}
+              onClick={() => filterItem(props)}
               key={id}
             >
-              {Val}
+              {props}
             </button>
           );
         })}

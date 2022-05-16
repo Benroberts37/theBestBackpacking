@@ -6,11 +6,11 @@ import RealData from './RealData'
 const App = () => {
   const [item, setItem] = useState(RealData);
 
-  const trailItems = [...new Set(RealData.map((Val) => Val.country))];
+  const trailItems = [...new Set(RealData.map((props) => props.country))];
 
   const filterItem = (item) => {
-    const newItem = RealData.filter((newVal) => {
-      return newVal.country === item;
+    const newItem = RealData.filter((newProps) => {
+      return newProps.country === item;
     });
     setItem(newItem);
   };

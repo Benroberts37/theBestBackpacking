@@ -5,37 +5,37 @@ const TrailCard = ({ item }) => {
     <>
       <div className="container-fluid">
         <div className="row justify-content-center">
-          {item.map((Val) => {
+          {item.map((props) => {
             return (
               <div
                 className="col-md-4 col-sm-6 card my-3 py-3 border-0"
-                key={Val.id}
+                key={props.id}
               >
                 <div className="card-body">
                   <div className="card-title fw-bold fs-4">
-                    <h1>{Val.nameOfTrail}</h1>
+                    <h1>{props.nameOfTrail}</h1>
                     <h2>Location Information</h2>
-                    <h4>{Val.country}</h4>
-                    <h4>{Val.parkLocation}</h4>
-                    <h4>{Val.stateOrProvince}</h4>
+                    <h4>{props.country}</h4>
+                    <h4>{props.parkLocation}</h4>
+                    <h4>{props.stateOrProvince}</h4>
                     <h2>Trail Details</h2>
-                    <h4>{Val.trailDescription}</h4>
-                    <h4>{Val.lengthInMiles}</h4>
-                    <h4>{Val.routeType}</h4>
-                    <h4>{Val.elevationGainFt}</h4>
-                    <h4>{Val.elevationLossFt}</h4>
-                    <h4>{Val.recommendedTimeSpent}</h4>
-                    <h4>{Val.recommendedStartingSpot}</h4>
-                    <h4>{Val.recommendedFinishingSpot}</h4>
-                    <h4>{Val.stateOrProvince}</h4>
+                    <h4>{props.trailDescription}</h4>
+                    <h4>{props.lengthInMiles}</h4>
+                    <h4>{props.routeType}</h4>
+                    <h4>{props.elevationGainFt}</h4>
+                    <h4>{props.elevationLossFt}</h4>
+                    <h4>{props.recommendedTimeSpent}</h4>
+                    <h4>{props.recommendedStartingSpot}</h4>
+                    <h4>{props.recommendedFinishingSpot}</h4>
+                    <h4>{props.stateOrProvince}</h4>
                     <h2>Permit Information and Cost</h2>
-                    <h4>{Val.permitRequired}</h4>
-                    <h4>{Val.hikingPermitCost}</h4>
-                    <h4>{Val.PermitRequiredToEnterPark}</h4>
-                    <h4>{Val.ParkPermitCost}</h4>
-                    <h4>{Val.PermitGatheringInstructions}</h4>
-                    <h4>{Val.permitWebsite}</h4>
-                    <h4>{Val.howFastDoPermitsSellOut}</h4>
+                    <h4>{props.permitRequired}</h4>
+                    <h4>{props.hikingPermitCost}</h4>
+                    <h4>{props.PermitRequiredToEnterPark}</h4>
+                    <h4>{props.ParkPermitCost}</h4>
+                    <h4>{props.PermitGatheringInstructions}</h4>
+                    <h4>{props.permitWebsite}</h4>
+                    <h4>{props.howFastDoPermitsSellOut}</h4>
                   </div>
                 </div>
               </div>
