@@ -1,7 +1,7 @@
 import React from "react";
 
 function showTrail() {
-  alert('Hello!')
+  alert('Coming Soon!')
 }
 
 const Card = ({ item }) => {
