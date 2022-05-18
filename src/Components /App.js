@@ -28,7 +28,7 @@ const App = () => {
             setItem={setItem}
             trailItems={trailItems}
           />
-          <TrailCard item={item} />
+          <Card item={item} />
         </div>
       </div>
     </>

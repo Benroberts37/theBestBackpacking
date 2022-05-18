@@ -1,4 +1,5 @@
 import React from "react";
+import './Card.css'
 
 function showTrail() {
   alert('Coming Soon!')
@@ -7,23 +8,18 @@ function showTrail() {
 const Card = ({ item }) => {
   return (
     <>
-      <div className="container-fluid">
-        <div className="row justify-content-center">
+      <div>
+        <div className = 'big-container'>
           {item.map((props) => {
             return (
-              <div
-                className="col-md-4 col-sm-6 card my-3 py-3 border-0"
-                key={props.id}
-              >
-                <div className="card-body">
-                  <div className="card-title fw-bold fs-4">
-                    <h1>{props.nameOfTrail}</h1>
-                    <h2>{props.country}</h2>
-                  </div>
-                  <div className="card-text">{props.trailDescription}</div>
-                </div>
-                <button onClick={showTrail}>Explore This Trail</button>
+            <div className = "card-container">
+              <div key={props.id}>
+                  <h1>{props.nameOfTrail}</h1>
+                  <h2>{props.country}</h2>
+                  <p>{props.trailDescription}</p>
+                  <button onClick={showTrail}>Explore This Trail</button>
               </div>
+            </div>
             );
           })}
         </div>

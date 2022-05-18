@@ -1,3 +1,14 @@
-.titles{
-  
+h1{
+    text-align: center;
+}
+
+.containers{
+    padding: 15px;
+    text-align: center;
+}
+
+.small-containers{
+    border: 2px solid blue;
+    padding: 8px; 
+    margin: 10px;
 }

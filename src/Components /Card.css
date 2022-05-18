@@ -1,0 +1,12 @@
+.card-container{
+border: solid 2px burlywood;
+padding: 10px;
+margin: 25px;
+text-align: center;
+width: 50%
+}
+
+.big-container{
+    border:5px solid blue;
+
+}

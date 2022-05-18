@@ -13,13 +13,15 @@ const TrailCard = ({ item }) => {
                 key={props.id}
               >
                 <div className="card-body">
-                    <div>
-                      <h1>{props.nameOfTrail}</h1>
+                    <div className="containers">
+                    <h1>{props.nameOfTrail}</h1>
+                     <div className= "small-containers">
                         <h2 className = "titles"><u>Location Information</u></h2>
                         <h4><strong>Country: </strong>{props.country}</h4>
                         <h4><strong>Park: </strong>{props.parkLocation}</h4>
                         <h4><strong>State/Province: </strong>{props.stateOrProvince}</h4>
-                    <div>
+                    </div>
+                    <div className= "small-containers">
                         <h2 className = "titles"><u>Trail Details</u></h2>
                         <h4><strong>Trail Description: </strong>{props.trailDescription}</h4>
                         <h4><strong>Trail Length: </strong>{props.lengthInMiles}</h4>
@@ -30,7 +32,7 @@ const TrailCard = ({ item }) => {
                         <h4><strong>Recommended Starting Location: </strong>{props.recommendStartingSpot}</h4>
                         <h4><strong>Recommended Finishing Location: </strong>{props.recommendedFinishingSpot}</h4>
                     </div>
-                    <div> 
+                    <div className= "small-containers"> 
                         <h2 className = "titles"><u>Permits and Cost</u></h2>
                         <h4><strong>Do you need a permit to backpack? </strong>{props.permitRequired}</h4>
                         <h4><strong>Hiking Permit Cost: </strong>{props.hikingPermitCost}</h4>
