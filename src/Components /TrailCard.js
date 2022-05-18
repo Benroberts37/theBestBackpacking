@@ -4,15 +4,12 @@ import './TrailCard.css'
 const TrailCard = ({ item }) => {
   return (
     <>
-      <div className="container-fluid">
+      <div>
         <div className="row justify-content-center">
           {item.map((props) => {
             return (
-              <div
-                className="col-md-4 col-sm-6 card my-3 py-3 border-0"
-                key={props.id}
-              >
-                <div className="card-body">
+              <div key={props.id}>
+                <div>
                     <div className="containers">
                     <h1>{props.nameOfTrail}</h1>
                      <div className= "small-containers">

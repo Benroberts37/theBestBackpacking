@@ -1,3 +1,12 @@
+# Welcome to The Best Backpacking! 
+
+Here you will be able to find the best backpacking trips all around the world. Here are a few things I am working on to make the app better:
+1. Adding more trips 
+2. Adding more filter capabilities 
+3. Building a page where you can submit your favorite   trip so others can see 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
