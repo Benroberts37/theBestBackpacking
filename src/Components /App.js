@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "./Card";
 import Buttons from "./Buttons";
 import RealData from './RealData'
+import TrailCard from "./TrailCard";
 
 const App = () => {
   const [item, setItem] = useState(RealData);
@@ -12,8 +13,11 @@ const App = () => {
     const newItem = RealData.filter((newProps) => {
       return newProps.country === item;
     });
+    
     setItem(newItem);
   };
+
+
   return (
     <>
       <div className="">
@@ -24,7 +28,7 @@ const App = () => {
             setItem={setItem}
             trailItems={trailItems}
           />
-          <Card item={item} />
+          <TrailCard item={item} />
         </div>
       </div>
     </>
