@@ -1,14 +1,14 @@
 import React from "react";
 import RealData from './RealData'
 
-const Buttons = ({ filterItem, setItem, trailItems }) => {
+const Buttons = ({ filterItem, setItem, filterCountry, filterTrailType, filterRouteType }) => {
   return (
     <>
       <div className="d-flex justify-content-center">
-        {trailItems.map((props, id) => {
+        {filterCountry.map((props, id) => {
           return (
             <button
-              className="btn-dark text-white p-1 px-2 mx-5 btn fw-bold"
+              className=""
               onClick={() => filterItem(props)}
               key={id}
             >
@@ -17,7 +17,28 @@ const Buttons = ({ filterItem, setItem, trailItems }) => {
           );
         })}
         <button
-          className="btn-dark text-white p-2 px-3 mx-5 fw-bold btn"
+          className=""
+          onClick={() => setItem(RealData)}
+        >
+          All
+        </button>
+      </div>
+
+
+      <div className="d-flex justify-content-center">
+        {filterTrailType.map((props, id) => {
+          return (
+            <button
+              className=""
+              onClick={() => filterRouteType(props)}
+              key={id}
+            >
+              {props}
+            </button>
+          );
+        })}
+        <button
+          className=""
           onClick={() => setItem(RealData)}
         >
           All

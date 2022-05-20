@@ -7,7 +7,9 @@ import TrailCard from "./TrailCard";
 const App = () => {
   const [item, setItem] = useState(RealData);
 
-  const trailItems = [...new Set(RealData.map((props) => props.country))];
+  const filterCountry = [...new Set(RealData.map((props) => props.country))];
+  const filterTrailType = [...new Set(RealData.map((props) => props.routeType))]
+  
 
   const filterItem = (item) => {
     const newItem = RealData.filter((newProps) => {
@@ -17,6 +19,14 @@ const App = () => {
     setItem(newItem);
   };
 
+  const filterRouteType = (item) => {
+    const newItem = RealData.filter((newProps) => {
+      return newProps.routeType === item;
+    });
+    
+    setItem(newItem);
+  };
+  
 
   return (
     <>
@@ -26,7 +36,9 @@ const App = () => {
           <Buttons
             filterItem={filterItem}
             setItem={setItem}
-            trailItems={trailItems}
+            filterCountry={filterCountry}
+            filterRouteType={filterRouteType}
+            filterTrailType={filterTrailType}
           />
           <Card item={item} />
         </div>
