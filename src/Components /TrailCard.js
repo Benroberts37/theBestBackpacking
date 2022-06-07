@@ -39,6 +39,9 @@ const TrailCard = ({ item }) => {
                         <h4><strong>permit website: </strong><a>{props.permitWebsite}</a></h4>
                         <h4><strong>How fast do permits sell out? </strong>{props.howFastDoPermitsSellOut}</h4>
                     </div>
+                    <div> 
+                      
+                    </div>
                   </div>
                 </div>
               </div>

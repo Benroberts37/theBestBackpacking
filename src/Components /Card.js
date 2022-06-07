@@ -17,7 +17,7 @@ const Card = ({ item }) => {
                   <h1>{props.nameOfTrail}</h1>
                   <h2>{props.country}</h2>
                   <p>{props.trailDescription}</p>
-                  <button onClick={showTrail}>Explore This Trail</button>
+                  <button onClick={showTrail}>Explore This Trail!</button>
               </div>
             </div>
             );
