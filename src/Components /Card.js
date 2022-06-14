@@ -12,8 +12,8 @@ const Card = ({ item }) => {
         <div className = 'big-container'>
           {item.map((props) => {
             return (
-            <div className = "card-container">
-              <div key={props.id}>
+            <div key={props.id} className = "card-container">
+              <div>
                   <h1>{props.nameOfTrail}</h1>
                   <h2>{props.country}</h2>
                   <p>{props.trailDescription}</p>

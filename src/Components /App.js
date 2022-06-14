@@ -10,12 +10,11 @@ const App = () => {
   const filterCountry = [...new Set(RealData.map((props) => props.country))];
   const filterTrailType = [...new Set(RealData.map((props) => props.routeType))]
   
-
+  
   const filterItem = (item) => {
     const newItem = RealData.filter((newProps) => {
       return newProps.country === item;
     });
-    
     setItem(newItem);
   };
 
